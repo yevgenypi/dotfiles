@@ -1,6 +1,11 @@
-(setq package-enable-at-startup nil)
 
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
 (package-initialize)
+
+(load "~/.emacs.d/init-packages")
 
 (load-theme 'monokai t)
 
@@ -27,17 +32,6 @@
 
 (windmove-default-keybindings)
 
-(require 'package)
-
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/")
-	     t)
-
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/")
-	     t)
-
-(package-initialize)
 
 (global-set-key (kbd "M-x") 'smex)
 
