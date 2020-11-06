@@ -32,7 +32,6 @@
 
 (windmove-default-keybindings)
 
-
 (global-set-key (kbd "M-x") 'smex)
 
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
@@ -46,4 +45,8 @@
 (global-undo-tree-mode)
 
 (global-set-key (kbd "M-/") 'undo-tree-visualize)
+
+;; 
+(setq backup-directory-alist '(("" . "~/.emacs.d/emacs_backup")))
+(setq backup-by-copying t)
 
